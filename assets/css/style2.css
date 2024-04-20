@@ -1,0 +1,83 @@
+
+.question{
+    border: solid rgb(245, 243, 243);
+    border-radius: 15px;
+    margin-bottom: 10%;
+    transition: all 0.2s;
+    margin: 2%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.question:hover{
+    scale: 1.02;
+}
+
+h4{
+    color: white;
+}
+input{
+    opacity: 0;
+}
+
+button{
+    border:solid white;
+    width: 500px;
+    border-radius: 5px;
+    margin: 1%;
+    height: 80px;
+    transition: all 0.2s;
+}
+
+button:hover{
+    scale: 1.02;
+}
+
+label{
+    font-size: medium;
+}
+.form-check{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.quea{
+    transition: all 0.8s;
+    border-radius: 20px;
+    animation: slideIn 1s ease-out forwards;
+}
+.quea:hover{
+    
+    scale: 1.01;
+}
+.color-div{
+    width: 400px;
+    height: 330vh;
+    top: 0;
+    right: 0px;
+    position: absolute;
+    z-index: -1;
+    background-color: hsl(0, 77%, 54%);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px); /* Adjust the distance from the bottom */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
